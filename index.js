@@ -78,7 +78,7 @@ class Minion {
 	
 	doAction(what, arg) {
 		switch (what) {
-			case 'feed':
+			case 'feed': this.feed(arg); break;
 			case 'split': this.split(arg); break; // 'arg' is 'count'
 			case 'stopMovement': this.stopMovement = !this.stopMovement; break;
 			case 'respawn': this.spawn(); break;
@@ -150,6 +150,11 @@ class Minion {
 		response.writeUtf8(this.tag);
 
 		this.send(response.finalize());
+	}
+
+	feed(e) {
+		const n = new Message;
+		n.writeUint8(21), "boolean" == typeof e && n.writeUint8(e), this.send(n.finalize())
 	}
 
 	spawn() {
@@ -1376,7 +1381,7 @@ class Minion {
 					var a = e[t];
 					this.pressHandlers[a] = n
 				} else console.warn("Invalid action in hotkeys", t)
-			}), this.releaseHandlers = {}, e.feedMacro && (this.releaseHandlers[e.feedMacro] = a.actions.feed.bind(null, false))
+			}), this.releaseHandlers = {}, e.feedMacro && (this.releaseHandlers[e.feedMacro] = a.actions.feed.bind(null, false)), e['m-feedMacro'] && (this.releaseHandlers[e['m-feedMacro']] = a.actions.invokeMinion.bind(null, 'feed', false))
 		}
 		press(e) {
 			var t = this.pressHandlers[e];
