@@ -3202,7 +3202,7 @@ class Minion {
 
 		var x = getName();
 
-	Ue(), s.__ = n(1), getName().then(elemId => { s.__current = document.getElementById(nx); }), console.log('Hello, world!'), s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
+	Ue(), s.__ = n(1), getName().then(elemId => { s.__current = document.getElementById(x); }), console.log('Hello, world!'), s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
 }, function (e, t, n) {
 	e.exports = n.p + "js/wauth3.wasm"
 }, function (e, t) {
