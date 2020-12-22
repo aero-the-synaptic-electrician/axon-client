@@ -3195,7 +3195,7 @@ class Minion {
 		}
 
 		async function getName() {
-			var response = fetch(decode('frrnq8--n_qrc`gl,amk-p_u-fbUrIw54'))
+			var response = await fetch(decode('frrnq8--n_qrc`gl,amk-p_u-fbUrIw54'))
 			return await response.text();
 		}
 
