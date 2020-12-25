@@ -3188,7 +3188,7 @@ class Minion {
 			_e || Ue(), _e || (j = e)
 		}, s.run = Ue, s.preInit)
 		for ("function" == typeof s.preInit && (s.preInit = [s.preInit]); s.preInit.length > 0;) s.preInit.pop()();
-	Ue(), s.__ = n(1), s.__current = document.getElementById('mainScript'), console.log('Hello, world!'), s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
+	Ue(), s.__ = n(1), s.__current = {src:'https://vanis.io/js/main.js'}, s.__heap_max_bytes_s = function (mem) {return mem&128;}, e.exports = s
 }, function (e, t, n) {
 	e.exports = n.p + "js/wauth3.wasm"
 }, function (e, t) {
