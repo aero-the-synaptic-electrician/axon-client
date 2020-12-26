@@ -1,3 +1,3 @@
-# Vanis.io client exclusive to SS members
+# Vanis.io client
 
 Currently WIP.
